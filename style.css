@@ -1,0 +1,92 @@
+body{
+   border: 1px solid #eee;
+   margin: 0;
+}
+
+.left-component, .right-component{
+    height: -moz-available;          
+    height: -webkit-fill-available; 
+}
+
+.left-component{
+    border: 1px solid #eee;
+}
+
+.user-cover-container{
+    height: 200px;
+    background: #2b2b52;
+    background-image: url('./img/cover.jpeg');
+    background-size: cover;
+}
+
+.user-bio{
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.user-bio img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-info{
+    text-align: center;
+}
+
+.user-social-links{
+    font-size: 25px;
+    text-align: center;
+}
+
+.user-about{
+    padding: 10px;
+}
+
+.user-skills{
+    padding: 10px;
+}
+
+.skills span{
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.user-latest-projects{
+    padding: 10px;
+}
+
+.user-latest-projects h3{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    button{
+        font-size: 13px;
+    }
+}
+
+.mySlides {
+    display:none;
+}
+
+.mySlides1 {
+    display:none;
+}
+
+a .pad{
+    padding: 10px
+}
+
+div .w3-modal-content{
+    height: 80%;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Chekwube's Portfolio</title>
+
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="w3-container-fluid">
+        <div class="w3-row">
+            <div class="w3-col m5 left-component">
+                <div class="user-cover-container"></div>
+                <div class="user-bio">
+                    <img src="./img/Snapshot_20180914_2.JPG" alt="">
+                    <div class="user-info">
+                        <h5><b>Chekwube C. Udeogu</b></h5>
+                        <span>Software Developer</span>
+                    </div>
+                    <div class="user-social-links">
+                        <a href="https://web.facebook.com/UdeoguChekwube" target="_blank">
+                            <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+                        </a>
+                        <a href="https://twitter.com/christok_cheks" target="_blank">
+                            <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chekwube-udeogu-b14860104/" target="_blank">
+                            <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        </a>
+                        <a href="https://github.com/chrischeks" target="_blank">
+                            <span><i class="fa fa-github-square" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                    <div class="user-about">
+                        <h5><b>About Me</b></h5>
+                        <div class="user-about-text">
+                            Chekwube is a Software Developer with over one year experience in coding, testing and
+                            establishing system improvements. Equally at home with leveraging technology for the
+                            development and delivery of impactful end products.
+                            <p>I have the vision of helping businesses, schools, NGOs, institutions. etc to achieve their full growth potential through building useful software products that addresses their needs. </p>
+                        </div>
+                    </div>
+                    <div class="user-skills">
+                        <h5><b>Skills</b></h5>
+                        <div class="skills">
+                            <span class="w3-tag w3-blue">HTML5</span>
+                            <span class="w3-tag w3-blue">CSS3</span>
+                            <span class="w3-tag w3-blue">Javascript</span>
+                            <span class="w3-tag w3-blue">Nodejs</span>
+                            <span class="w3-tag w3-blue">Express.js</span>
+                            <span class="w3-tag w3-blue">Angular</span>
+                            <span class="w3-tag w3-blue">MongoDb</span>
+                            <span class="w3-tag w3-blue">Git</span>
+                            <span class="w3-tag w3-blue">Version control</span>
+                            <span class="w3-tag w3-blue">Linux</span>
+                            <span class="w3-tag w3-blue">Bootstrap</span>
+                            <span class="w3-tag w3-blue">Jade</span>
+                            <span class="w3-tag w3-blue">Material Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m7 right-component">
+                <div class="w3-bar w3-white">
+                    <div class="w3-row w3-border-buttom">
+                        <div class="w3-col s4 m4">
+                            <button class="w3-bar-item w3-button tablink w3-blue" onclick="openTab(event,'Portfolio')"
+                                style="width:100%">
+                                <i class="fa fa-briefcase"></i>
+                                Portfolio
+                            </button>
+                        </div>
+                        <!-- <div class="w3-col s4 m4">
+                            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Services')"
+                                style="width: 100%">
+                                <i class="fa fa-cogs"></i>
+                                Services
+                            </button>
+                        </div> -->
+                        <div class="w3-col s4 m4">
+                            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Blog')"
+                                style="width: 100%">
+                                <i class="fa fa-rss"></i>
+                                Blog
+                            </button>
+                        </div>
+                        <div class="w3-col s4 m4">
+                            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Contact')"
+                                style="width: 100%">
+                                <i class="fa fa-phone"></i>
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="Portfolio" class="w3-container tab">
+                    <div class="user-latest-projects">
+                        <h3><b>Recent Projects</b></h3>
+                        <div class="w3-row-padding">
+
+                            <div class="w3-col m4">
+                                <div class="project">
+                                    <img onclick="document.getElementById('modal01').style.display = 'block'"
+                                        title="Click image to preview project" src="./img/Quabbly Dashboard.jpg"
+                                        style="width:100%; height: 150px;" alt="">
+                                    <div class="w3-container w3-padding">
+                                        <span><b>Quabbly Microservices Suite</b></span><br>
+                                        <a href="https://cloud.quabbly.com" target="_blank"><button
+                                                class="w3-button w3-blue"> Click here to visit site</button></a>
+                                        <div id="modal03" class="w3-modal" style="text-align: center"
+                                            onclick="this.style.display='none'">
+                                            <img class="w3-modal-content w3-animate-opacity mySlides"
+                                                src="./img/Quabbly Dashboard.jpg">
+                                            <img class="w3-modal-content w3-animate-opacity mySlides"
+                                                src="./img/Quabbly Filemanager1.jpg">
+                                            <a href="https://cloud.quabbly.com" target="_blank"><span
+                                                    class="w3-tag w3-blue pad"> Click here to visit site</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col m4">
+                                <div class="project">
+                                    <img onclick="document.getElementById('modal02').style.display = 'block'"
+                                        title="Click image to preview project" src="./img/photizzo home.jpg"
+                                        style="width:100%; height: 150px;" alt="">
+                                    <div class="w3-container w3-padding">
+                                        <span><b class="long">Wattbank Product-referral</b></span><br>
+                                        <a href="https://photizzo.com" target="_blank"><button
+                                                class="w3-button w3-blue"> Click here to visit site</button></a>
+                                    </div>
+                                    <div id="modal02" class="w3-modal" style="text-align: center"
+                                        onclick="this.style.display='none'">
+                                        <img class="w3-modal-content w3-animate-opacity mySlides"
+                                            src="./img/photizzo home.jpg">
+                                        <img class="w3-modal-content w3-animate-opacity mySlides"
+                                            src="./img/photizzo1.jpg">
+                                        <a href="https://photizzo.com" target="_blank"><span class="w3-tag w3-blue pad">
+                                                Click here to visit site</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col m4">
+                                <div class="project">
+                                    <img onclick="document.getElementById('modal03').style.display = 'block'"
+                                        title="Click image to preview project" src="./img/newsandgist home1.jpg"
+                                        style="width:100%; height: 150px;" alt="">
+                                    <div class="w3-container w3-padding">
+                                        <span><b>All News Newspaper and Gists</b></span><br>
+                                        <a href="https://newsandgists.herokuapp.com" target="_blank"><button
+                                                class="w3-button w3-blue"> Click here to visit site</button></a>
+                                    </div>
+                                    <div id="modal01" class="w3-modal" style="text-align: center"
+                                        onclick="this.style.display='none'">
+                                        <img class="w3-modal-content w3-animate-opacity mySlides"
+                                            src="./img/newsandgist home1.jpg">
+                                        <img class="w3-modal-content w3-animate-opacity mySlides"
+                                            src="./img/newsandgist 3.jpg">
+                                        <a href="https://newsandgists.herokuapp.com" target="_blank"><span
+                                                class="w3-tag w3-blue pad"> Click here to visit site</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="Services" class="w3-container tab" style="display:none">
+                    <h3 style="text-align: center"><b>Services</b></h3>
+                    <div class="w3-row w3-margin-top">
+                        <div class="w3-col s5 m2">
+                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
+                                alt="">
+                        </div>
+                        <div class="w3-col s7 m10">
+                            <h5>Website Design & Development</h5>
+                            <span>description</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-margin-top">
+                        <div class="w3-col s5 m2">
+                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
+                                alt="">
+                        </div>
+                        <div class="w3-col s7 m10">
+                            <h5>Graphic Design</h5>
+                            <span>description</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-margin-top">
+                        <div class="w3-col s5 m2">
+                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
+                                alt="">
+                        </div>
+                        <div class="w3-col s7 m10">
+                            <h5>Website Hosting and management</h5>
+                            <span>description</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-margin-top">
+                        <div class="w3-col s5 m2">
+                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
+                                alt="">
+                        </div>
+                        <div class="w3-col s7 m10">
+                            <h5>Mobile Development</h5>
+                            <span>description</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="Blog" class="w3-container tab" style="display: none">
+                    <h3 style="text-align:center;"><b>Blog</b></h3>
+                    <div class="w3-row">
+                        <div class="w3-col s4 m4 w3-padding">
+                            <img src="./img/whatsapfacebookinstagram.jpeg" alt="" style="height:150px; width:100%;">
+                        </div>
+                        <div class="w3-col s8 m8">
+                            <h5><b>Instagram, Facebook And Whatsapp Users Fume As Services Go Down Again</b></h5>
+                            <span>
+                                <p> Facebook, Instagram and WhatsApp have been hit with another outage that’s stopping
+                                    users
+                                    from logging in, viewing or posting pictures.</p>
+                                <p> According to report sighted by MANDY NEWS on Independent outage monitor Downdetector
+                                    has
+                                    registered over 2,100 reports at one time from users insisting Instagram is not
+                                    working
+                                    as normal. Some are unable to access their accounts at all.</p>
+                                <a href="javascript:void(0);" class="w3-text-blue">read more</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-col s4 m4 w3-padding">
+                            <img src="./img/502.jpeg" alt="" style="height:150px; width:100%;">
+                        </div>
+                        <div class="w3-col s8 m8">
+                            <h5><b>Cloudflare Servers Develop Problem: Many Websites, Services Went Offline</b></h5>
+                            <span>For about an hour Internet users faced problems accessing many websites because of a
+                                problem with Cloudflare.The company provides internet security and other services meant
+                                to help online
+                                businesses operate smoothly.
+
+                                <p> BBC reports that many members of the public had reported seeing “502 errors”
+                                    displayed
+                                    in their browsers when they tried to visit its clients. </p>
+                                <a href="javascript:void(0);" class="w3-text-blue">read more</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="Contact" class="w3-container tab" style="display: none">
+                    <h3 style="text-align:center;"><b>Send me a message </b></h3>
+                    <div class="user-contact">
+                        <form action="" class="w3-container w3-text-blue w3-margin">
+                            <div class="w3-row w3-section">
+                                <div class="w3-col" style="width:50px">
+                                    <i class="w3-xxlarge fa fa-user"></i>
+                                </div>
+                                <div class="w3-rest">
+                                    <input class="w3-input w3-border" name="first" type="text"
+                                        placeholder="Type Your FullName">
+                                </div>
+                            </div>
+                            <div class="w3-row w3-section">
+                                <div class="w3-col" style="width:50px">
+                                    <i class="w3-xxlarge fa fa-envelope-o"></i>
+                                </div>
+                                <div class="w3-rest">
+                                    <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="w3-row w3-section">
+                                <div class="w3-col" style="width:50px">
+                                    <i class="w3-xxlarge fa fa-phone"></i>
+                                </div>
+                                <div class="w3-rest">
+                                    <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="w3-row w3-section">
+                                <div class="w3-col" style="width:50px">
+                                    <i class="w3-xxlarge fa fa-pencil"></i>
+                                </div>
+                                <div class="w3-rest">
+                                    <textarea class="w3-input w3-border" rows="8" cols="80"
+                                        style="resize:none;"></textarea>
+                                </div>
+                            </div>
+                            <div class="w3-row" style="text-align:right;">
+                                <button class="w3-button  w3-blue  w3-padding" style="width:200px;">Send</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="w3-container">
+                        <h3 style="text-align:center;"> <b>Contact Details</b></h3>
+                        <div>
+                            <i class="w3-large fa fa-phone"></i>
+                            08182447114
+                        </div>
+                        <div>
+                            <i class="w3-large fa fa-envelope-o"></i>
+                            chekwubeudeogu@gmail.com
+                        </div>
+                        <div>
+                            <i class="w3-large fa fa-home"></i>
+                            19 Muyibi Street Olodi Apapa Lagos
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+
+</html>
