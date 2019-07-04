@@ -71,11 +71,7 @@ body{
     }
 }
 
-.mySlides {
-    display:none;
-}
-
-.mySlides1 {
+.mySlides0 .mySlides1 .mySlides2{
     display:none;
 }
 
