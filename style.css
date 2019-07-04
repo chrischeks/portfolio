@@ -4,8 +4,7 @@ body{
 }
 
 .left-component, .right-component{
-    height: -moz-available;          
-    height: -webkit-fill-available; 
+    height: 100%;
 }
 
 .left-component{
