@@ -79,13 +79,6 @@
                                 Portfolio
                             </button>
                         </div>
-                        <!-- <div class="w3-col s4 m4">
-                            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Services')"
-                                style="width: 100%">
-                                <i class="fa fa-cogs"></i>
-                                Services
-                            </button>
-                        </div> -->
                         <div class="w3-col s4 m4">
                             <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Blog')"
                                 style="width: 100%">
@@ -178,52 +171,6 @@
 
                     </div>
                 </div>
-                <!-- <div id="Services" class="w3-container tab" style="display:none">
-                    <h3 style="text-align: center"><b>Services</b></h3>
-                    <div class="w3-row w3-margin-top">
-                        <div class="w3-col s5 m2">
-                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
-                                alt="">
-                        </div>
-                        <div class="w3-col s7 m10">
-                            <h5>Website Design & Development</h5>
-                            <span>description</span>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top">
-                        <div class="w3-col s5 m2">
-                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
-                                alt="">
-                        </div>
-                        <div class="w3-col s7 m10">
-                            <h5>Graphic Design</h5>
-                            <span>description</span>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top">
-                        <div class="w3-col s5 m2">
-                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
-                                alt="">
-                        </div>
-                        <div class="w3-col s7 m10">
-                            <h5>Website Hosting and management</h5>
-                            <span>description</span>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top">
-                        <div class="w3-col s5 m2">
-                            <img src="./img/Snapshot_20180914_2.JPG" style="width: 100%; height: 100px; padding: 10px"
-                                alt="">
-                        </div>
-                        <div class="w3-col s7 m10">
-                            <h5>Mobile Development</h5>
-                            <span>description</span>
-                        </div>
-                    </div>
-                </div> -->
                 <div id="Blog" class="w3-container tab" style="display: none">
                     <h3 style="text-align:center;"><b>Blog</b></h3>
                     <div class="w3-row">
@@ -231,7 +178,8 @@
                             <img src="./img/whatsapfacebookinstagram.jpeg" alt="" style="height:150px; width:100%;">
                         </div>
                         <div class="w3-col m7">
-                            <h5><b>Instagram, Facebook And Whatsapp Users Fume As Services Go Down Again (3/7/2019)</b></h5>
+                            <h5><b>Instagram, Facebook And Whatsapp Users Fume As Services Go Down Again (3/7/2019)</b>
+                            </h5>
                             <span>
                                 <p> Facebook, Instagram and WhatsApp have been hit with another outage that’s stopping
                                     users
@@ -250,7 +198,8 @@
                             <img src="./img/502.jpeg" alt="" style="height:150px; width:100%;">
                         </div>
                         <div class="w3-col m7">
-                            <h5><b>Cloudflare Servers Develop Problem: Many Websites, Services Went Offline (3/7/2019)</b></h5>
+                            <h5><b>Cloudflare Servers Develop Problem: Many Websites, Services Went Offline
+                                    (3/7/2019)</b></h5>
                             <span>
                                 <p> For about an hour Internet users faced problems accessing many websites because of a
                                     problem with Cloudflare.The company provides internet security and other services
@@ -259,9 +208,6 @@
                                     displayed in their browsers when they tried to visit its clients. The service has
                                     more than 16 million customers ranging from the chat service Discord to the dating
                                     site OKCupid.</p>
-                                <p>The problem had now been resolved although some of its analytics tools were still
-                                    facing disruption, Cloudflare said. Among the casualties was Downdetector, a popular
-                                    site used to monitor disruption.</p>
                                 <a href="javascript:void(0);" class="w3-text-blue">read more</a>
                             </span>
                         </div>
@@ -332,20 +278,21 @@
         </div>
     </div>
     <script>
-        function modelSlider(mySlides){
-        var myIndex = 0;
-        carousel();
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName(mySlides);
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+        function modelSlider(mySlides) {
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName(mySlides);
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000);
-        }}
+        }
     </script>
 </body>
 
